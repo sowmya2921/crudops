@@ -1,0 +1,18 @@
+html 
+  head 
+    title editStudent 
+  body 
+    form(method='post' action='/updateStudent/'+student['_id'])
+      input(type="text" name='firstname' value=student.firstname)
+      br
+      input(type="text" name='lastname' value=student.lastname)
+      br
+      label gender 
+      input(type="radio" name='gender' value='male' checked=student.gender==='male')
+      b :Male
+      input(type="radio" name='gender' value='female' checked=student.gender==='female')
+      b :female
+      br
+      button Update
+
+

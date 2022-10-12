@@ -1,0 +1,14 @@
+html 
+   head 
+     title 'welcome to pug'
+   body 
+     h1 "List of students"
+     ul 
+       each val in stds
+          li= val.firstname
+            button 
+               a(href="/deleteStudent/"+val['_id']) delete 
+            button 
+               a(href="/editStudent/"+val['_id']) edit 
+             
+            
